@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "90379d08-922d-4b31-9f5e-ac6d3edf8e1e",
+		"name": "GoFr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27320048"
+	},
+	"item": [
+		{
+			"name": "Get Test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "id",
+						"value": "abcd1234",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8097/car/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"car",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "abcd1234",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"abcd12adf34\",\n  \"make\": \"Toyotasdf\",\n  \"model\": \"Sarthak\",\n  \"year\": 2018,\n  \"owner\": \"John Doe\",\n  \"in_garage\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8097/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
